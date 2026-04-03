@@ -1,0 +1,6 @@
+At this level, first i logged in with bandit0 username like in level 0, then i give some command:
+  bandit0@bandit:~$ ls --all
+  .  ..  .bash_logout  .bashrc  .profile  readme
+  bandit0@bandit:~$ cat readme
+And I got this password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+Then I log in bandit1 username with the password above
