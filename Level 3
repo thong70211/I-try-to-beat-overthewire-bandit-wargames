@@ -1,0 +1,8 @@
+In this level, first I log in bandit2 account with the password found in Level 1
+I will not mention this step again in the future
+First, I check the home directory:
+  bandit2@bandit:~$ ls --all
+  .  ..  .bash_logout  .bashrc  .profile  --spaces in this filename--
+Then, I learnt how to open file that have spaces inside with \
+  bandit2@bandit:~$ cat  ./--spaces\ in\ this\ filename--
+And the password inside: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
