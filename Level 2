@@ -1,0 +1,11 @@
+In this level, I logged in bandit1 with the password found in Level 1
+The goal is to open the file - located in home directory
+First I check with:
+  bandit1@bandit:~$ ls --all
+  -  .  ..  .bash_logout  .bashrc  .profile
+Found the file -
+Then open the file with:
+  bandit1@bandit:~$ cat ./-
+The content inside is:
+  263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+I learnt that ./ is the right way to open files with cat command
