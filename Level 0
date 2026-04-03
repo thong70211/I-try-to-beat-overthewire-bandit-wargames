@@ -1,2 +1,3 @@
 At this level, just paste the command in my kali linux terminal, and it's done: 
   ssh bandit0@bandit.labs.overthewire.org -p 2220 
+Enter the password and level 0 finished
