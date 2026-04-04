@@ -1,0 +1,15 @@
+In this level, first i check home directory:
+  bandit3@bandit:~$ ls --all
+  .  ..  .bash_logout  .bashrc  inhere  .profile
+Follow the instruction, the password i need to find is hided in inhere folder, so i open and look into it:
+  bandit3@bandit:~$ cd inhere
+  bandit3@bandit:~/inhere$ ls -all
+  total 12
+  drwxr-xr-x 2 root    root    4096 Apr  3 15:17 .
+  drwxr-xr-x 3 root    root    4096 Apr  3 15:17 ..
+  -rw-r----- 1 bandit4 bandit3   33 Apr  3 15:17 ...Hiding-From-You
+Then I tried to check with the name Hiding-From-You but not work, so I copy the ... and it works:
+  bandit3@bandit:~/inhere$ cat ./Hiding-From-You
+  cat: ./Hiding-From-You: No such file or directory
+  bandit3@bandit:~/inhere$ cat ./...Hiding-From-You
+The password I found: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
