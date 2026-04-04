@@ -1,1 +1,41 @@
+bandit 5
+In this level, first I look into inhere folder:
+  bandit5@bandit:~/inhere$ ls -l
+  total 80
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere00
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere01
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere02
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere03
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere04
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere05
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere06
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere07
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere08
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere09
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere10
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere11
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere12
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere13
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere14
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere15
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere16
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere17
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere18
+  drwxr-x--- 2 root bandit5 4096 Apr  3 15:17 maybehere19
+To much folders, but due to instruction, I know that the file I need to find will be:
+      human-readable
+      1033 bytes in size
+      not executable
+So I use the command: find . -type f -size 1033c ! -executable
+   bandit5@bandit:~/inhere$ find . -type f -size 1033c ! -executable
+Explain:  
+  . is to find in this folder and every folders inside
+  -type f is type file
+  -size 1033c is 1033 bytes, kilobyte is k,...
+  ! -executable is not executable
+Found it:
+  ./maybehere07/.file2
+Look into it:
+  bandit5@bandit:~/inhere/maybehere07$ cat ./.file2
+The password inside: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
