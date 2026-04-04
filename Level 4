@@ -1,3 +1,4 @@
+bandit3
 In this level, first i check home directory:
   bandit3@bandit:~$ ls --all
   .  ..  .bash_logout  .bashrc  inhere  .profile
