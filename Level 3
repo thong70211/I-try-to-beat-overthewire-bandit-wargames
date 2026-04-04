@@ -1,5 +1,5 @@
 In this level, first I log in bandit2 account with the password found in Level 1
-I will not mention this step again in the future
+I will not mention this step again in the future but note the account level
 First, I check the home directory:
   bandit2@bandit:~$ ls --all
   .  ..  .bash_logout  .bashrc  .profile  --spaces in this filename--
